@@ -1,7 +1,7 @@
 FROM golang:bullseye
 
-RUN apt-get update -y \
-    apt-get install openssl -y
+RUN apt-get update \
+    apt-get install openssl
 
 WORKDIR /app
 
