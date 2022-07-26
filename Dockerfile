@@ -1,6 +1,6 @@
-FROM golang:bullseye
+FROM golang:alpine
 
-RUN apt-get update && apt-get install openssl
+RUN apk add openssl
 
 WORKDIR /app
 
